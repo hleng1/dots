@@ -1,2 +1,7 @@
-set hlsearch ai si sw=2 ts=2 et
+set hlsearch ruler wildmenu showmatch
+set ai si sw=2 ts=2 et
+set path+=**
 syntax on
+
+map <F1> :bp<CR>
+map <F2> :bn<CR>
