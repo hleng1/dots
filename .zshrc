@@ -5,7 +5,8 @@ SAVEHIST=1000
 setopt incappendhistory
 setopt histignoredups
 
-alias ll='ls -l'
+alias ll='ls -l '
+alias open='xdg-open '
 
 alias gs='git status '
 alias ga='git add '
@@ -19,3 +20,5 @@ alias gl='git log '
 alias firefox='firefox &>/dev/null &'
 alias thunderbird='MOZ_ENABLE_WAYLAND=1 thunderbird &>/dev/null &'
 alias chrome='google-chrome --enable-features=UseOzonePlatform --ozone-platform=wayland --incognito &>/dev/null &'
+
+path=(/usr/local/go/bin $path)

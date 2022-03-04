@@ -5,3 +5,5 @@ syntax on
 
 map <F1> :bp<CR>
 map <F2> :bn<CR>
+
+au Filetype go set sw=8 ts=8 et!
