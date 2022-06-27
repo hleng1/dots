@@ -20,5 +20,7 @@ alias gl='git log '
 alias firefox='firefox &>/dev/null &'
 alias thunderbird='MOZ_ENABLE_WAYLAND=1 thunderbird &>/dev/null &'
 alias chrome='google-chrome --enable-features=UseOzonePlatform --ozone-platform=wayland --incognito &>/dev/null &'
+alias screenshot='grim -g "$(slurp)"'
+alias screenrecord='wf-recorder -g "$(slurp)" -f recording-$(date +%Y%m%d%H%M).mp4'
 
 path=(/usr/local/go/bin $path)
