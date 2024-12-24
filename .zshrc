@@ -9,7 +9,19 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
-alias ll='ls -l '
+autoload -U colors && colors
+PS1="%{$fg[green]%}%n@%m%{$reset_color%}:%1~%{$reset_color%} %% "
+
+alias ls='ls --color=auto'
+#alias dir='dir --color=auto'
+#alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias open='xdg-open '
 alias save='git commit -a -m "."'
 
